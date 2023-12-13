@@ -1,0 +1,140 @@
+:root{
+    --green:#16994c;
+    --text-color:rgb(85, 78, 69);
+    --span-color:rgb(247, 92, 3);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #16994c;
+}
+
+.login-form{
+    padding: 2rem 2rem;
+    border: none;
+    background: #fff;
+    width: 300px;
+    border-radius: .5rem;
+    font-family: sans-serif;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.school-name{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.school-name h3{
+    text-align: center;
+    margin: 2rem 0;
+    color: #3b2626;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.text h1{
+    color: var(--green);
+}
+
+.text span{
+    color: rgb(255, 137, 3);
+    font-weight: bold;
+    font-size: 10px;
+}
+
+
+.top{
+    width: 100%;
+    display: flex;
+}
+
+.top img{
+    width: 80px;
+}
+
+.field{
+    font-size: 1.2rem;
+    color: var(--text-color);
+    padding: 0.2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--text-color);
+    background: transparent;
+}
+
+.button{
+    display: block;
+    border-radius: .3rem;
+    margin: auto;
+    padding: 0.5rem 4rem;
+    color: #fff;
+    font-size: 1.2rem;
+    background: var(--green);
+    border: none;
+    cursor: pointer;
+}
+
+.box{
+    position: relative;
+}
+
+.box label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgb(151, 145, 137);
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.field:focus ~ label,
+.field:valid ~ label{
+    top: -14px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: orange;
+}
+
+.box span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    appearance: none;
+    filter: brightness(1) invert(0);
+    cursor: pointer;
+}
+
+
+
+.dashboard {
+    text-align: center;
+    margin: 50px;
+}
+
+.dashboard h1 {
+    color: #333;
+}
+
+.dashboard p {
+    color: #666;
+}

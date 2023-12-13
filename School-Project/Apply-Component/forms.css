@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: #45a049;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 5px;
+    max-width: 1200px;
+    width: 99%;
+    height: 80px;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #2c722f;
+    padding: 3px;
+}
+
+.top a{
+    text-decoration: none;
+    background: rgb(204, 56, 56);
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.top img{
+    width: 84px;
+    border: 2px solid #4caf50;
+    border-radius: 45%;
+    padding: 3px;
+}
+
+.top h2{
+    border: 2px solid #2e2e2e;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+.container{
+    align-items: center;
+    position: relative;
+    top: 10px;
+    max-width: 1200px;
+    width: 99%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.container header{
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    cursor: default;
+}
+
+header::before{
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    height: 3px;
+    width: 27px;
+    border-radius: 8px;
+    background-color: #45a049;
+}
+
+.container form{
+    position: relative;
+    margin-top: 16px;
+    min-height: 490px;
+    background-color: #fff;
+}
+
+
+.container form .details{
+    margin-top: 30px;
+}
+
+.container form .title{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 6px 0;
+    min-width: 120px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.24);
+    width: 19%;
+    color: #fff;
+    background: #45a049;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: default;
+}
+
+.container form .titl{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 6px 0;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.24);
+    color: #fff;
+    background: #45a049;
+    border-radius: 8px;
+    padding: 7px;
+    cursor: default;
+}
+
+.container form .fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+form .fields .input-field, .image-field{
+    display: flex;
+    width: calc(100% /3 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+
+.input-field, .image-field label{
+    font-size: 12px;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+
+.input-field input,select{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 0 15px;
+    color: #333;
+    border: 1px solid #aaa;
+    height: 42px;
+    margin: 8px 0;
+}
+
+.input-field input:is(:focus, :valid){
+    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+}
+
+.input-field input[type="date"]{
+    color: #707070;
+}
+
+.input-field input[type="date"]:valid{
+    color: #707070;
+}
+
+.container form button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    background-color: #45a049;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    margin: 25px 0;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: #2c722f;
+}
+
+form .buttons{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+form .buttons button{
+    margin-right: 14px;
+}
+
+
+.form img {
+    max-width: 70px;
+    margin-bottom: 10px;
+}
+
+button[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+.image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #3333339f;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+.massage {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.success {
+    background: #12279e96;
+    width: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+.error {
+    background: rgb(202, 54, 54);
+    color: #fff;
+}
+
+
+
+#bece-results{
+    background: #45a049;
+    padding: 4px;
+    width: 100%;
+}
+
+#passport{
+    background: #45a049;
+    padding: 4px;
+    width: 100%;
+}
+
+.declear{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    border: 1px solid #333;
+    background: rgba(53, 53, 160, 0.226);
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.declear span{
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 7px;
+}
+
+
+
+@media (max-width: 750px){
+    form .fields .input-field, .image-field{
+        width: calc(100% /2 - 15px);
+    }
+
+    .top{
+        font-size: 80%;
+        padding: 20px;
+    }
+
+    .top img{
+        width: 70px;
+    }
+}
+
+@media (max-width: 550px){
+    form .fields .input-field, .image-field{
+        width: 100%;
+    }
+
+    .top h2{
+        font-size: 100%;
+        padding: 4px;
+    }
+
+    .top img{
+        width: 60px;
+    }
+}
+
+@media (max-width: 400px){
+    .logo{
+        padding: 0;
+        margin-left: -8px;
+        gap: 1px;
+    }
+
+    .container{
+        padding: 12px;
+    }
+
+    .top a{
+        padding: 3px;
+        font-size: 70%;
+    }
+
+    .logo img{
+        width: 50px;
+    }
+
+    .logo h3{
+        font-size: 90%;
+    }
+
+    .top{
+        padding: 10px;
+    }
+}
+
+@media (max-width: 315px){
+    .top h2{
+        font-size: 80%;
+    }
+
+    .logo img{
+        width: 40px;
+    }
+}
+
+
+
+
+
